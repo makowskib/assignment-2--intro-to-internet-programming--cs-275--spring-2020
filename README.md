@@ -22,7 +22,7 @@ _You may **only** work within the confines of the included scaffold._
 ### CSS
 * Place all your styles in `style.css`.
 
-## JavaScript
+### JavaScript
 * Place all your JavaScript in `app.js`.
 
 ### Git
