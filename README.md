@@ -48,7 +48,7 @@ You must employ Gulp as the task runner with workflows for development and produ
 * `gulp build` should load the entire production environment into a folder called `prod`.
 
 ## ❖・Due・❖
-Tuesday, 28 April 2020, at 10:00 AM.
+Thursday, 30 April 2020, at 10:00 AM.
 
 ## ❖・Grading・❖
 | Item                                       | Points |
