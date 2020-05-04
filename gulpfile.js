@@ -53,5 +53,16 @@ let lintCSS = () => {
 
 exports.lintCSS = lintCSS;
 
-//
+//TranspileJSForProd
+
+let transpileJSForProd = () => {
+    return src(`js/*.js`)
+        .pipe(babel())
+        .pipe(jsCompressor())
+        .pipe(dest(`prod/js`));
+
+};
+
+
+
 
