@@ -74,6 +74,7 @@ let transpileJSForDev = () => {
 };
 
 exports.transpileJSForDev = transpileJSForDev();
+
 //CompressCSS
 
 let compressCSS = () => {
