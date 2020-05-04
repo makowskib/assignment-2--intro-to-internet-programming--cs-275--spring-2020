@@ -7,8 +7,9 @@ let compressHTML = () => {
         .pipe(dest(`compressed-html/`));
 };
 
-
 exports.compressHTML = compressHTML;
+
+//
 
 const { src } = require(`gulp`);
 const htmlValidator = require(`gulp-html`);
@@ -20,6 +21,8 @@ let validateHTML = () => {
 
 exports.validateHTML = validateHTML;
 
+//
+
 const { src } = require(`gulp`);
 const jsLinter = require(`gulp-eslint`);
 
@@ -30,3 +33,23 @@ let lintJS = () => {
 };
 
 exports.lintJS = lintJS;
+
+//
+
+const { src } = require(`gulp`);
+const cssLinter = require(`gulp-stylelint`);
+
+let lintCSS = () => {
+    return src(`css/*.css`)
+        .pipe(cssLinter({
+            failAfterError: true,
+            reporters: [
+                {formatter: `verbose`, console: true}
+            ]
+        }));
+};
+
+exports.lintCSS = lintCSS;
+
+//
+
