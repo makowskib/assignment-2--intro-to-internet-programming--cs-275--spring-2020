@@ -1,0 +1,16 @@
+body{
+  background-color: beige;
+  color: brown;
+}
+h1{
+  text-align: center;
+  color: crimson;
+  font-family: Sand, Didot, serif;
+  font-style: italic;
+  font-size: 60px;
+}
+h2{
+  color: brown;
+  font-family: Sand, Didot, serif;
+  font-size: 30px;
+}
