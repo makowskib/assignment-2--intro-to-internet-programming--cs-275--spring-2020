@@ -9,19 +9,29 @@
 <header>
   <h1>How To Make Rice</h1>
 </header>
-  <button onclick="showcali()">Sprouted California Rice</button>
-  <div id="caliRecipe">
+  <form>
+   <button onclick="showcali()">Sprouted California Rice</button>
+   <div id="caliRecipe">
     <h2>To Make Sprouted California Rice</h2>
     <p>For slightly al dente rice:</p>
     <p>Combine 1 1/4 cups of rice with 2 cups of water or broth and 1 Tbsp olive oil. Bring to a boil and stir once to mix. Reduce heat to low, cover with a tight-fitting lid and cook for 25 minutes. Remove from heat and let stand for 5 minutes. Fluff with a fork and serve.</p>
     <p>For softer rice:</p>
     <p>Increase liquid by 1/2 cup and cook time by 5 minutes.</p>
+     <p>Or enter the amount of rice you want to use:</p>
+     <input type="number" min="0" id="cali-rice" step="0.25" cali-rice>
+     <output id="cali-water-output">ounces of water</output>
+     <output id="cali-oil-output">ounces of oil</output>
   </div>
   <button onclick="showwhite()">White Rice</button>
   <div id="whiteRecipe">
-  <h2>To Make White Rice</h2>
-  <p>Combine 1 cup of rice with 2 cups of water and 1 Tbsp olive oil. Bring to a boil, then reduce heat to the lowest setting. Cook for about 18 minutes.</p>
+    <h2>To Make White Rice</h2>
+    <p>Combine 1 cup of rice with 2 cups of water and 1 Tbsp olive oil. Bring to a boil, then reduce heat to the lowest setting. Cook for about 18 minutes.</p>
+    <p>Or enter the amount of rice you want to use:</p>
+    <input type="number" min="0" id="white-rice" white-rice>
+    <output id="white-water-output">ounces of water</output>
+    <output id="white-oil-output">ounces of oil</output>
   </div>
-  <script src="js/app.js"></script>
+    <script src="js/app.js"></script>
+  </form>
 </body>
 </html>
