@@ -63,6 +63,29 @@ let transpileJSForProd = () => {
 
 };
 
+exports.transpileJSForProd = transpileJSForProd();
+
+//TranspileJSForDev
+
+let transpileJSForDev = () => {
+    return src(`js/*.js`)
+        .pipe(babel())
+        .pipe(dest(`./.temp/js`));
+};
+
+exports.transpileJSForDev = transpileJSForDev();
+//CompressCSS
+
+let compressCSS = () => {
+    return src(`styles/*.css`)
+        .pipe(cleanCSS({compatibility: `ie8`}))
+        .pipe(dest(`prod/styles`));
+};
+
+exports.compressCSS=compressCSS();
+
+
+
 
 
 
