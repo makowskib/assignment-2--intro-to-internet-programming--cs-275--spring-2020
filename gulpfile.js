@@ -1,3 +1,5 @@
+// Compress HTML
+
 const { src, dest } = require(`gulp`);
 const htmlCompressor = require(`gulp-htmlmin`);
 
@@ -9,7 +11,7 @@ let compressHTML = () => {
 
 exports.compressHTML = compressHTML;
 
-//
+// Validate HTML
 
 const { src } = require(`gulp`);
 const htmlValidator = require(`gulp-html`);
@@ -21,7 +23,7 @@ let validateHTML = () => {
 
 exports.validateHTML = validateHTML;
 
-//
+//LintJS
 
 const { src } = require(`gulp`);
 const jsLinter = require(`gulp-eslint`);
@@ -34,7 +36,7 @@ let lintJS = () => {
 
 exports.lintJS = lintJS;
 
-//
+//LintCSS
 
 const { src } = require(`gulp`);
 const cssLinter = require(`gulp-stylelint`);
