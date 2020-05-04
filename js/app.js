@@ -14,3 +14,5 @@ function showwhite() {
     } else {
         x.style.display = "none";
     }}
+
+    //tried to figure out input/output/calculations but could not get it to work
